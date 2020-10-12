@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="ifelseif3.css">
+<body>
+
+<p>Click the button to check whether number greater than 20 or lessthan:</p>
+
+<button onclick="Checking()"  class="btn btn-primary" >click here </button>
+
+<p id="demo"></p>
+
+<script>
+function Checking() {
+  var result;
+  var num=Number(prompt("Enter number:"));
+  if (num < 10) {
+    result = "lessthan10";
+  } else if (num < 20) {
+    result = "lessthan20";
+  } else {
+    result = "greaterthan20";
+  }
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
